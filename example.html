@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datalist form</title>
+	<link rel="stylesheet" type="text/css" href="datalist.css"/>
+</head>
+<body>
+
+<div class="datalistElement" id="sfColor">
+	<input type="text" name="color" placeholder="Color" class="sfInput" autocomplete="off">
+	<span class="sfInputIco"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="st3" d="M12 18c-.3 0-.5-.1-.7-.3l-8-8c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l7.3 7.3 7.3-7.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3z"></path></svg></span>
+	<ul class="sfDatalist">
+		<li>Red</li>
+		<li>Blue</li>
+		<li>Green</li>
+		<li>Yellow</li>
+		<li>Brown</li>
+		<li>Pink</li>
+		<li>Grey</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="datalist.js"></script>
+<script type="text/javascript">
+	
+setDatalist('#sfColor', null, onChooseCallback);
+
+function onChooseCallback(value)
+{
+	console.log('You choose '+value);
+}
+
+</script>
+</body>
+</html>
