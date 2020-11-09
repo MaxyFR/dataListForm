@@ -1,0 +1,8 @@
+.datalistElement{ width:250px; display:inline-block; position:relative; }
+.datalistElement input[type='text']{ width:100%; border:1px solid grey; border-radius:3px; font-size:15px; padding:5px; position:relative; }
+.datalistElement .sfInputIco{ position:absolute; width:16px; height:16px; top:7px; right:5px; transition: transform 100ms ease; }
+.datalistElement .reverseIco{ transform:rotate(180deg); }
+.datalistElement .error{ background-color:rgba(255,0,0,0.3); }
+.datalistElement ul{ width:100%; max-height:250px; margin:0; padding:0; border:1px solid grey; border-top:0; border-radius:0 0 3px 3px; overflow-y:auto; display:none; position:absolute; }
+.datalistElement .active{ display:block; }
+.datalistElement ul li{ list-style:none; padding:5px; cursor:pointer; }
